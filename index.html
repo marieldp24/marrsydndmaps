@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom D&D Maps | Bring Your Campaign to Life</title>
+    <style>
+        /* CSS Styles */
+        :root {
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #b5952f;
+            --text-light: #f4f4f4;
+            --text-muted: #aaaaaa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif; /* Gives a more classic/fantasy feel */
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Buttons */
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: var(--bg-dark);
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--accent-gold-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://via.placeholder.com/1200x600?text=Your+Map+Artwork+Here') no-repeat center center/cover;
+            border-bottom: 2px solid var(--accent-gold);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            color: #e0e0e0;
+        }
+
+        /* Sections Grid */
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .section-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        /* Special Alert/Bonus Box */
+        .bonus-box {
+            background-color: rgba(212, 175, 55, 0.1);
+            border: 2px dashed var(--accent-gold);
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .bonus-box h2 {
+            margin-top: 0;
+        }
+
+        /* Steps list */
+        .steps {
+            list-style: none;
+            padding: 0;
+            counter-reset: step-counter;
+        }
+
+        .steps li {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .steps li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: -2px;
+            background-color: var(--accent-gold);
+            color: var(--bg-dark);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* Footer CTA */
+        .footer-cta {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--bg-card);
+            border-top: 2px solid var(--accent-gold);
+        }
+
+        /* Input Field */
+        input[type="email"] {
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid var(--text-muted);
+            border-radius: 5px;
+            width: 70%;
+            max-width: 300px;
+            margin-right: 10px;
+            background: var(--bg-dark);
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Bring Your Campaign to Life</h1>
+        <p>Unique, highly detailed battle maps and world maps tailored exactly to your story, your setting, and your players.</p>
+        <a href="#contact" class="cta-btn">Commission Your Custom Map</a>
+    </header>
+
+    <div class="container">
+        
+        <!-- The Offer Section -->
+        <section class="section-grid">
+            <div>
+                <h2>Your World, Exactly How You Envision It</h2>
+                <p>Stop relying on generic maps that <em>almost</em> fit your campaign. Whether you need a sprawling continent, a treacherous dungeon, or a bustling tavern, I will work with you to craft a custom digital map that perfectly matches your vision.</p>
+            </div>
+            
+            <div class="card">
+                <h3>What You Get:</h3>
+                <ul>
+                    <li><strong>Fully Customized Design:</strong> Tailored to your specific lore, terrain, and grid requirements.</li>
+                    <li><strong>High-Resolution Files:</strong> Optimized for Virtual Tabletop (VTT) platforms like Roll20, Foundry, or printing at home.</li>
+                    <li><strong>Collaborative Process:</strong> We will work together to ensure every trap, secret door, and landscape feature is exactly right.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- The Bonus Section -->
+        <section class="bonus-box">
+            <h2>🔥 Exclusive Bonus: Unlock the Map Vault</h2>
+            <p>Need maps for your next session while I work on your custom commission?</p>
+            <p>When you purchase a custom map, you instantly receive <strong>free, limited-time access</strong> to my exclusive library of pre-made D&D maps. Instantly download forests, caves, towns, and encounters to keep your campaign running smoothly while we build your masterpiece.</p>
+        </section>
+
+        <!-- How It Works & Teaser -->
+        <section class="section-grid">
+            <div>
+                <h2>From Concept to Campaign</h2>
+                <ul class="steps">
+                    <li><strong>Share Your Vision:</strong> Fill out a quick form detailing your setting, desired dimensions, and specific elements.</li>
+                    <li><strong>The Drafting Phase:</strong> I bring your concept to life, providing updates to ensure we are on the right track.</li>
+                    <li><strong>Roll for Initiative:</strong> You receive your high-resolution custom map, plus your free access pass to my map vault!</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>🗺️ Coming Soon: Physical Maps</h3>
+                <p>Prefer playing in person? In the near future, I will be offering <strong>physical, high-quality printed versions</strong> of both my pre-made and customized maps, shipped directly to your door.</p>
+                <p><em>Want to be the first to know when physical maps drop?</em></p>
+                <form action="#" method="POST" style="margin-top: 15px;">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="cta-btn" style="margin-top: 10px; padding: 12px 20px;">Join Waitlist</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer CTA -->
+    <footer class="footer-cta" id="contact">
+        <h2>Ready to Build Your World?</h2>
+        <p>Let's create the perfect stage for your players' next great adventure.</p>
+        <a href="mailto:your-email@example.com" class="cta-btn">Start Your Commission Today</a>
+    </footer>
+
+</body>
+</html>
